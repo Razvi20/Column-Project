@@ -34,11 +34,11 @@ body {
 }
 
 .container {
+  margin-top: 10rem;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  height: 100vh;
   gap: 5rem;
 }
 
@@ -89,7 +89,7 @@ body {
 
 .card-link:link,
 .card-link:visited {
-  padding: 1.2rem 3rem;
+  padding: 1.8rem 2.6rem;
   color: #fff;
   text-decoration: none;
   border: 2px solid transparent;
@@ -105,7 +105,6 @@ body {
   .card {
     grid-template-columns: 1fr;
     padding: 2.4rem;
-    border-radius: 0px;
   }
 
   .card-link:link,
@@ -116,7 +115,6 @@ body {
 
   .card1 .card-link {
     color: hsl(31, 77%, 52%);
-    border-radius: 0;
   }
 
   .card2 .card-link {
@@ -125,6 +123,21 @@ body {
 
   .card3 .card-link {
     color: hsl(179, 100%, 13%);
-    border-radius: 0;
+  }
+
+  .card1 {
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+    border-bottom-left-radius: 0;
+  }
+
+  .card3 {
+    border-bottom-left-radius: 9px;
+    border-bottom-right-radius: 9px;
+    border-top-right-radius: 0;
+  }
+
+  .container {
+    margin-top: 0;
   }
 }
